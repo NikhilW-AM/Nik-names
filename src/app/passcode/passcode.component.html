@@ -1,0 +1,18 @@
+
+<div class="outer">
+  <div class="card">
+    <div class="password-container">
+
+      <input type="text" #box maxLength="1" *ngFor="let i of arr; let index=index" (keyup.enter)="nextTab(box.value,index)" id="i">
+      <!-- <input type="text" tabindex="2">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text"> -->
+
+    </div>
+  </div>
+</div>
+
+<input type="text" (keydown.backspace)="onClick($event)" #box>
+<p>{{size}}</p>
